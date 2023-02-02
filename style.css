@@ -1,0 +1,278 @@
+/* body {
+  height: 6000px;
+} */
+/* navbar */
+.navbar {
+  position: relative;
+  z-index: 5;
+}
+
+.navbar-brand {
+  font-family: "Viga", sans-serif;
+  font-size: 32px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #0b63dc;
+  width: 5%;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+  margin-left: 3px;
+}
+
+.navbar-nav .btn {
+  margin-top: 5px;
+}
+
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+.carousel-caption .display-4 {
+  margin-bottom: 0px;
+}
+
+.carousel-caption a {
+  margin-bottom: 140px;
+  margin-top: 20px;
+}
+
+/* .corousel-item img {
+  background-attachment: fixed;
+} */
+
+/* .jumbotron::after {
+  content: "";
+  display: block;
+  background-image: linear-gradient(to top, rgba(145, 255, 255, 0), rgba(145, 255, 255, 0.2));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+} */
+
+/* .container .display-4,
+.container a {
+  position: relative;
+  z-index: 1;
+} */
+
+/* .jumbotron .display-4,
+.jumbotron a {
+  color: white;
+  padding-top: 375px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+  margin-bottom: 30px;
+} */
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+
+.container .panel {
+  background-color: white;
+  box-shadow: 0px 3px 20px black;
+  border-radius: 12px;
+  margin-top: -65px;
+  position: relative;
+  z-index: 1;
+}
+
+.figure {
+  padding-top: 30px;
+}
+
+/* .figure .rog {
+  mix-blend-mode: color-burn;
+} */
+
+.figure img {
+  width: 50%;
+  aspect-ratio: 3/2;
+  object-fit: scale-down;
+  float: left;
+  /* mix-blend-mode: color-burn; */
+}
+
+.figure h4 {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.figure p {
+  color: #acacac;
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: -5px;
+}
+
+.container .work {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.container .work h3 {
+  font-size: 25px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.container .work h3 span {
+  font-weight: 500;
+}
+
+.container .work p {
+  font-size: 15px;
+  color: #acacac;
+  font-weight: 200;
+  margin: 15px 0;
+}
+
+.container .work a {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.testi h5 {
+  margin-top: 60px;
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.coment {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.coment .figure img {
+  float: none;
+  object-fit: cover;
+  width: 60px;
+  height: 60%;
+  margin: 0 20px;
+  opacity: 0.5;
+}
+
+.coment .figure .center {
+  float: none;
+  object-fit: cover;
+  width: 100px;
+  height: 100%;
+  opacity: 1;
+  margin-top: -30px;
+}
+
+.coment .figure h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1c2c5d;
+  margin-top: 10px;
+}
+
+.coment .figure p {
+  font-size: 12px;
+  color: #acacac;
+  margin-top: -8px;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+.footer p {
+  font-size: 18px;
+  color: #acacac;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .navbar-nav .btn {
+    margin-top: 0px;
+  }
+
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+    height: 803px;
+  }
+
+  .carousel-caption .display-4 {
+    margin-bottom: 0px;
+  }
+
+  .carousel-caption a {
+    margin-bottom: 250px;
+    margin-top: 20px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 62px;
+  }
+
+  .carousel-item img {
+    height: 800px;
+  }
+
+  .container .work {
+    text-align: left;
+  }
+
+  .container .work h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+
+  .container .work p {
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 30px 0;
+  }
+
+  .container .work a {
+    font-size: 20px;
+  }
+
+  .testi h5 {
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 32px;
+  }
+}
